@@ -27,9 +27,21 @@ public class HttpRequestUtils {
 	 *            参数
 	 * @return
 	 */
-	public static String httpPost(String url, String param) {
-		JSONObject jsonParam = JSONObject.fromObject(param);
-		return httpPost(url, jsonParam, false);
+	public static String httpPost(String url) {
+		return httpPost(url, null, false);
+	}
+
+	/**
+	 * httpPost
+	 * 
+	 * @param url
+	 *            路径
+	 * @param jsonParam
+	 *            参数
+	 * @return
+	 */
+	public static String httpPost(String url, JSONObject param) {
+		return httpPost(url, param, false);
 	}
 
 	/**
@@ -56,7 +68,10 @@ public class HttpRequestUtils {
 				entity.setContentType("application/json");
 				method.setEntity(entity);
 			}
+			Long start = System.currentTimeMillis();
 			HttpResponse result = httpClient.execute(method);
+			Long end = System.currentTimeMillis();
+			
 			url = URLDecoder.decode(url, "UTF-8");
 			/** 请求发送成功，并得到响应 **/
 			if (result.getStatusLine().getStatusCode() == 200) {
