@@ -5,6 +5,7 @@ import java.net.URLDecoder;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -57,7 +58,7 @@ public class HttpRequestUtils {
 	 */
 	public static String httpPost(String url, JSONObject jsonParam, boolean noNeedResponse) {
 		// post请求返回结果
-		DefaultHttpClient httpClient = new DefaultHttpClient();
+		HttpClient httpClient = new DefaultHttpClient();
 		String jsonResult = null;
 		HttpPost method = new HttpPost(url);
 		try {
@@ -68,10 +69,7 @@ public class HttpRequestUtils {
 				entity.setContentType("application/json");
 				method.setEntity(entity);
 			}
-			Long start = System.currentTimeMillis();
 			HttpResponse result = httpClient.execute(method);
-			Long end = System.currentTimeMillis();
-			
 			url = URLDecoder.decode(url, "UTF-8");
 			/** 请求发送成功，并得到响应 **/
 			if (result.getStatusLine().getStatusCode() == 200) {

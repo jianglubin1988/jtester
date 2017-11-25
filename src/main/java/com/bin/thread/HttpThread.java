@@ -25,13 +25,14 @@ public class HttpThread extends Thread {
 				for (Map<String, Object> map : sets) {
 					Long start = System.currentTimeMillis();
 					JSONObject param = map.get("param") == null ? null : (JSONObject) map.get("param");
-					HttpRequestUtils.httpPost((String) map.get("url"), param);
+					String url = (String) map.get("url");
+					HttpRequestUtils.httpPost(url, param);
 					Long end = System.currentTimeMillis();
 					Long interval = end - start;
 					total += interval;
 					if (interval > PropertiesUtils.getTimeout()) {
 						errCount++;
-						logger.info("线程" + Thread.currentThread().getName() + "调用Http接口耗时：" + interval + "ms");
+						logger.info("线程" + Thread.currentThread().getName() + "调用Http接口" + url + "耗时：" + interval + "ms");
 					}
 				}
 				i++;
