@@ -33,7 +33,8 @@ public class HttpThread extends Thread {
                             + "\n接口：" + url
                             + "\n耗时：" + interval + "ms"
                             + "\n请求报文：" + param
-                            + "\n返回报文：" + result;
+                            + "\n返回报文：" + result
+                            + "\n";
                     if (interval > temp) {
                         temp = interval;
                         maxLog = normLog;
@@ -41,9 +42,9 @@ public class HttpThread extends Thread {
                     total += interval;
                     if (interval > PropertiesUtils.getTimeout()) {
                         errCount++;
-                        System.out.println(normLog);
+                        logger.info(normLog);
                     } else {
-                        System.out.println("返回报文：" + result + "，耗时：" + interval + "ms");
+                        logger.info("返回报文：" + result + "，耗时：" + interval + "ms");
                     }
 
                 }

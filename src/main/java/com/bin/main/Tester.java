@@ -5,6 +5,7 @@ import com.bin.utils.PropertiesUtils;
 import com.bin.utils.ThreadPoolUtils;
 import org.apache.log4j.Logger;
 
+import java.util.Calendar;
 import java.util.concurrent.ExecutorService;
 
 public class Tester {
@@ -12,6 +13,7 @@ public class Tester {
 	private final static Logger logger = Logger.getLogger(Tester.class);
 
 	public static void main(String[] args) {
+		logger.info("============================== Tester running " + Calendar.getInstance().getTime() + " ==============================");
 		ExecutorService pool = null;
 		try {
 			int i = 0;

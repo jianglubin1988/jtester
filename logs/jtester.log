@@ -1,991 +1,1220 @@
-[ INFO]_2017-11-27 10:48:27 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：17786ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：14ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：19ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：17ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：12ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：12ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：13ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：41ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：14ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：12ms
-[ INFO]_2017-11-27 10:48:28 - com.bin.thread.HttpThread.run(HttpThread.java:42):线程名称：Thread-0，Http请求数量： 10，请求超时数量： 10，总耗时: 17940ms，平均耗时： 1794ms
-[ERROR]_2017-11-27 10:50:16 - com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:90):post请求提交失败:http://localhost:8080/httpservice/csf
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:72)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:45)
-	at com.bin.thread.HttpThread.run(HttpThread.java:29)
-[ INFO]_2017-11-27 10:50:16 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：13973ms
-[ERROR]_2017-11-27 10:51:06 - com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:90):post请求提交失败:http://localhost:8080/httpservice/csf
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:72)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:45)
-	at com.bin.thread.HttpThread.run(HttpThread.java:29)
-[ INFO]_2017-11-27 10:51:06 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：22959ms
-[ERROR]_2017-11-27 10:51:11 - com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:90):post请求提交失败:http://localhost:8080/httpservice/csf
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:72)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:45)
-	at com.bin.thread.HttpThread.run(HttpThread.java:29)
-[ INFO]_2017-11-27 10:51:11 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：4640ms
-[ERROR]_2017-11-27 10:51:40 - com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:90):post请求提交失败:http://localhost:8080/httpservice/csf
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:72)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:45)
-	at com.bin.thread.HttpThread.run(HttpThread.java:29)
-[ INFO]_2017-11-27 10:51:40 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：12540ms
-[ERROR]_2017-11-27 10:52:33 - com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:90):post请求提交失败:http://localhost:8080/httpservice/csf
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:72)
-	at com.bin.utils.HttpRequestUtils.httpPost(HttpRequestUtils.java:45)
-	at com.bin.thread.HttpThread.run(HttpThread.java:29)
-[ INFO]_2017-11-27 10:52:33 - com.bin.thread.HttpThread.run(HttpThread.java:35):线程Thread-0调用Http接口http://localhost:8080/httpservice/csf耗时：9642ms
-[ INFO]_2017-11-27 11:37:14 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-3
-Http接口：http://localhost:8080/httpservice/csf
-耗时：6238ms
-结果：{"msg":"失败","code":"1","data":"异常捕获：返回结果为null, 调用接口失败！"}
-[ INFO]_2017-11-27 11:37:14 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-0
-Http接口：http://localhost:8080/httpservice/csf
-耗时：6245ms
-结果：{"msg":"失败","code":"1","data":"异常捕获：返回结果为null, 调用接口失败！"}
-[ INFO]_2017-11-27 11:37:14 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-2
-Http接口：http://localhost:8080/httpservice/csf
-耗时：6340ms
-结果：{"msg":"失败","code":"1","data":"异常捕获：返回结果为null, 调用接口失败！"}
-[ INFO]_2017-11-27 11:37:14 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-1
-Http接口：http://localhost:8080/httpservice/csf
-耗时：6341ms
-结果：{"msg":"失败","code":"1","data":"异常捕获：返回结果为null, 调用接口失败！"}
-[ INFO]_2017-11-27 11:37:14 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-4
-Http接口：http://localhost:8080/httpservice/csf
-耗时：6347ms
-结果：{"msg":"失败","code":"1","data":"异常捕获：返回结果为null, 调用接口失败！"}
-[ INFO]_2017-11-27 11:37:15 - com.bin.thread.HttpThread.run(HttpThread.java:52):线程名称：Thread-2
-Http数量： 10
-超时数量： 1
-平均耗时： 711ms
-最大耗时：6340ms
-总耗时: 7114ms
-[ INFO]_2017-11-27 11:37:15 - com.bin.thread.HttpThread.run(HttpThread.java:52):线程名称：Thread-0
-Http数量： 10
-超时数量： 1
-平均耗时： 723ms
-最大耗时：6245ms
-总耗时: 7235ms
-[ INFO]_2017-11-27 11:37:15 - com.bin.thread.HttpThread.run(HttpThread.java:52):线程名称：Thread-3
-Http数量： 10
-超时数量： 1
-平均耗时： 725ms
-最大耗时：6238ms
-总耗时: 7258ms
-[ INFO]_2017-11-27 11:37:15 - com.bin.thread.HttpThread.run(HttpThread.java:52):线程名称：Thread-4
-Http数量： 10
-超时数量： 1
-平均耗时： 730ms
-最大耗时：6347ms
-总耗时: 7302ms
-[ INFO]_2017-11-27 11:37:15 - com.bin.thread.HttpThread.run(HttpThread.java:52):线程名称：Thread-1
-Http数量： 10
-超时数量： 1
-平均耗时： 745ms
-最大耗时：6341ms
-总耗时: 7455ms
-[ INFO]_2017-11-27 11:38:21 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-0
-Http数量： 10
-超时数量： 0
-平均耗时： 134ms
-最大耗时：854ms
-总耗时: 1345ms
-[ INFO]_2017-11-27 11:38:21 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-2
-Http数量： 10
-超时数量： 0
-平均耗时： 135ms
-最大耗时：851ms
-总耗时: 1355ms
-[ INFO]_2017-11-27 11:38:21 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-4
-Http数量： 10
-超时数量： 0
-平均耗时： 144ms
-最大耗时：853ms
-总耗时: 1441ms
-[ INFO]_2017-11-27 11:38:21 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-1
-Http数量： 10
-超时数量： 0
-平均耗时： 147ms
-最大耗时：872ms
-总耗时: 1473ms
-[ INFO]_2017-11-27 11:38:21 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-3
-Http数量： 10
-超时数量： 0
-平均耗时： 164ms
-最大耗时：876ms
-总耗时: 1641ms
-[ INFO]_2017-11-27 11:38:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-0
-Http数量： 10
-超时数量： 0
-平均耗时： 120ms
-最大耗时：929ms
-总耗时: 1206ms
-[ INFO]_2017-11-27 11:38:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-2
-Http数量： 10
-超时数量： 0
-平均耗时： 121ms
-最大耗时：929ms
-总耗时: 1214ms
-[ INFO]_2017-11-27 11:38:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-1
-Http数量： 10
-超时数量： 0
-平均耗时： 126ms
-最大耗时：930ms
-总耗时: 1261ms
-[ INFO]_2017-11-27 11:38:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-3
-Http数量： 10
-超时数量： 0
-平均耗时： 126ms
-最大耗时：929ms
-总耗时: 1263ms
-[ INFO]_2017-11-27 11:38:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-4
-Http数量： 10
-超时数量： 0
-平均耗时： 126ms
-最大耗时：929ms
-总耗时: 1263ms
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-2
-Http接口：http://localhost:8080/httpservice/index
-耗时：1050ms
-结果：Congratulations
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-0
-Http接口：http://localhost:8080/httpservice/index
-耗时：1051ms
-结果：Congratulations
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-3
-Http接口：http://localhost:8080/httpservice/index
-耗时：1051ms
-结果：Congratulations
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-4
-Http接口：http://localhost:8080/httpservice/index
-耗时：1050ms
-结果：Congratulations
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-1
-Http接口：http://localhost:8080/httpservice/index
-耗时：1050ms
-结果：Congratulations
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-2
-Http数量： 10
-超时数量： 1
-平均耗时： 125ms
-最大耗时：1050ms
-总耗时: 1256ms
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-0
-Http数量： 10
-超时数量： 1
-平均耗时： 134ms
-最大耗时：1051ms
-总耗时: 1340ms
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-4
-Http数量： 10
-超时数量： 1
-平均耗时： 134ms
-最大耗时：1050ms
-总耗时: 1347ms
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-3
-Http数量： 10
-超时数量： 1
-平均耗时： 141ms
-最大耗时：1051ms
-总耗时: 1410ms
-===============================
-[ INFO]_2017-11-27 11:39:57 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-1
-Http数量： 10
-超时数量： 1
-平均耗时： 140ms
-最大耗时：1050ms
-总耗时: 1402ms
-===============================
-[ INFO]_2017-11-27 11:40:13 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-0
-Http数量： 10
-超时数量： 0
-平均耗时： 103ms
-最大耗时：788ms
-总耗时: 1037ms
-==============================================================
-[ INFO]_2017-11-27 11:40:13 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-4
-Http数量： 10
-超时数量： 0
-平均耗时： 104ms
-最大耗时：787ms
-总耗时: 1048ms
-==============================================================
-[ INFO]_2017-11-27 11:40:13 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-1
-Http数量： 10
-超时数量： 0
-平均耗时： 105ms
-最大耗时：789ms
-总耗时: 1058ms
-==============================================================
-[ INFO]_2017-11-27 11:40:13 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-2
-Http数量： 10
-超时数量： 0
-平均耗时： 106ms
-最大耗时：788ms
-总耗时: 1065ms
-==============================================================
-[ INFO]_2017-11-27 11:40:13 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-3
-Http数量： 10
-超时数量： 0
-平均耗时： 108ms
-最大耗时：788ms
-总耗时: 1084ms
-==============================================================
-[ INFO]_2017-11-27 11:40:36 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-3
-Http接口：http://localhost:8080/httpservice/index
-耗时：987ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:40:36 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-2
-Http接口：http://localhost:8080/httpservice/index
-耗时：987ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:40:36 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-4
-Http接口：http://localhost:8080/httpservice/index
-耗时：1007ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:40:36 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-1
-Http接口：http://localhost:8080/httpservice/index
-耗时：1010ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:40:36 - com.bin.thread.HttpThread.run(HttpThread.java:40):线程：Thread-0
-Http接口：http://localhost:8080/httpservice/index
-耗时：1007ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:40:37 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-3
-Http数量： 10
-超时数量： 1
-平均耗时： 116ms
-最大耗时：987ms
-总耗时: 1166ms
-==============================================================
-[ INFO]_2017-11-27 11:40:37 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-2
-Http数量： 10
-超时数量： 1
-平均耗时： 118ms
-最大耗时：987ms
-总耗时: 1187ms
-==============================================================
-[ INFO]_2017-11-27 11:40:37 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-4
-Http数量： 10
-超时数量： 1
-平均耗时： 126ms
-最大耗时：1007ms
-总耗时: 1265ms
-==============================================================
-[ INFO]_2017-11-27 11:40:37 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-0
-Http数量： 10
-超时数量： 1
-平均耗时： 135ms
-最大耗时：1007ms
-总耗时: 1350ms
-==============================================================
-[ INFO]_2017-11-27 11:40:37 - com.bin.thread.HttpThread.run(HttpThread.java:53):线程名称：Thread-1
-Http数量： 10
-超时数量： 1
-平均耗时： 149ms
-最大耗时：1010ms
-总耗时: 1493ms
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:40):
-线程名称：Thread-2
-Http接口：http://localhost:8080/httpservice/index
-耗时：825ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:40):
-线程名称：Thread-3
-Http接口：http://localhost:8080/httpservice/index
-耗时：826ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:40):
-线程名称：Thread-4
-Http接口：http://localhost:8080/httpservice/index
-耗时：826ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:40):
-线程名称：Thread-1
-Http接口：http://localhost:8080/httpservice/index
-耗时：825ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:40):
-线程名称：Thread-0
-Http接口：http://localhost:8080/httpservice/index
-耗时：825ms
-结果：Congratulations
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:53):
-线程名称：Thread-0
-Http数量： 10
-超时数量： 1
-平均耗时： 102ms
-最大耗时：825ms
-总耗时: 1020ms
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:53):
-线程名称：Thread-1
-Http数量： 10
-超时数量： 1
-平均耗时： 108ms
-最大耗时：825ms
-总耗时: 1083ms
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:53):
-线程名称：Thread-3
-Http数量： 10
-超时数量： 1
-平均耗时： 117ms
-最大耗时：826ms
-总耗时: 1179ms
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:53):
-线程名称：Thread-4
-Http数量： 10
-超时数量： 1
-平均耗时： 123ms
-最大耗时：826ms
-总耗时: 1239ms
-==============================================================
-[ INFO]_2017-11-27 11:41:22 - com.bin.thread.HttpThread.run(HttpThread.java:53):
-线程名称：Thread-2
-Http数量： 10
-超时数量： 1
-平均耗时： 125ms
-最大耗时：825ms
-总耗时: 1258ms
-==============================================================
-[ INFO]_2017-11-27 11:55:30 - com.bin.thread.HttpThread.run(HttpThread.java:60):
-================线程【Thread-4】信息开始================
-总耗时: 1049ms
-平均耗时： 104ms
-最大耗时：802ms
-请求数量： 10
-超时数量： 0
-================最大耗时接口信息================
-------超时信息--------
---线程：Thread-4--
---接口：http://localhost:8080/httpservice/index--
---耗时：802ms--
---结果：Congratulations--
-------------------
-================线程【Thread-4】信息结束================
-[ INFO]_2017-11-27 11:55:30 - com.bin.thread.HttpThread.run(HttpThread.java:60):
-================线程【Thread-1】信息开始================
-总耗时: 1112ms
-平均耗时： 111ms
-最大耗时：802ms
-请求数量： 10
-超时数量： 0
-================最大耗时接口信息================
-------超时信息--------
---线程：Thread-1--
---接口：http://localhost:8080/httpservice/index--
---耗时：802ms--
---结果：Congratulations--
-------------------
-================线程【Thread-1】信息结束================
-[ INFO]_2017-11-27 11:55:31 - com.bin.thread.HttpThread.run(HttpThread.java:60):
-================线程【Thread-2】信息开始================
-总耗时: 1155ms
-平均耗时： 115ms
-最大耗时：803ms
-请求数量： 10
-超时数量： 0
-================最大耗时接口信息================
-------超时信息--------
---线程：Thread-2--
---接口：http://localhost:8080/httpservice/index--
---耗时：803ms--
---结果：Congratulations--
-------------------
-================线程【Thread-2】信息结束================
-[ INFO]_2017-11-27 11:55:31 - com.bin.thread.HttpThread.run(HttpThread.java:60):
-================线程【Thread-0】信息开始================
-总耗时: 1162ms
-平均耗时： 116ms
-最大耗时：802ms
-请求数量： 10
-超时数量： 0
-================最大耗时接口信息================
-------超时信息--------
---线程：Thread-0--
---接口：http://localhost:8080/httpservice/index--
---耗时：802ms--
---结果：Congratulations--
-------------------
-================线程【Thread-0】信息结束================
-[ INFO]_2017-11-27 11:55:31 - com.bin.thread.HttpThread.run(HttpThread.java:60):
-================线程【Thread-3】信息开始================
-总耗时: 1206ms
-平均耗时： 120ms
-最大耗时：804ms
-请求数量： 10
-超时数量： 0
-================最大耗时接口信息================
-------超时信息--------
---线程：Thread-3--
---接口：http://localhost:8080/httpservice/index--
---耗时：804ms--
---结果：Congratulations--
-------------------
-================线程【Thread-3】信息结束================
-[ INFO]_2017-11-27 11:57:06 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-1】信息开始================
-总耗时: 1246ms
-平均耗时： 124ms
-最大耗时：1023ms
-请求数量： 10
-超时数量： 0
-----------------最大耗时接口信息----------------
-线程：Thread-1
-接口：http://localhost:8080/httpservice/index
-耗时：1023ms
-结果：Congratulations
-================线程【Thread-1】信息结束================
-[ INFO]_2017-11-27 11:57:06 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-0】信息开始================
-总耗时: 1280ms
-平均耗时： 128ms
-最大耗时：1023ms
-请求数量： 10
-超时数量： 0
-----------------最大耗时接口信息----------------
-线程：Thread-0
-接口：http://localhost:8080/httpservice/index
-耗时：1023ms
-结果：Congratulations
-================线程【Thread-0】信息结束================
-[ INFO]_2017-11-27 11:57:06 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-4】信息开始================
-总耗时: 1289ms
-平均耗时： 128ms
-最大耗时：1023ms
-请求数量： 10
-超时数量： 0
-----------------最大耗时接口信息----------------
+[ INFO]_2018-08-06 14:35:37 - com.bin.thread.HttpThread.run(HttpThread.java:66):调用接口失败！异常信息：net.sf.json.JSONException: Unterminated string at character 105 of {"url":"http://10.0.2.12:8999/ngqualitype/testMem","modelIds=201807131616163899049,201807261444350329725}
+[ INFO]_2018-08-06 14:35:37 - com.bin.thread.HttpThread.run(HttpThread.java:66):调用接口失败！异常信息：net.sf.json.JSONException: Unterminated string at character 105 of {"url":"http://10.0.2.12:8999/ngqualitype/testMem","modelIds=201807131616163899049,201807261444350329725}
+[ INFO]_2018-08-06 14:35:37 - com.bin.thread.HttpThread.run(HttpThread.java:66):调用接口失败！异常信息：net.sf.json.JSONException: Unterminated string at character 105 of {"url":"http://10.0.2.12:8999/ngqualitype/testMem","modelIds=201807131616163899049,201807261444350329725}
+[ INFO]_2018-08-06 14:35:37 - com.bin.thread.HttpThread.run(HttpThread.java:66):调用接口失败！异常信息：net.sf.json.JSONException: Unterminated string at character 105 of {"url":"http://10.0.2.12:8999/ngqualitype/testMem","modelIds=201807131616163899049,201807261444350329725}
+[ INFO]_2018-08-06 14:35:37 - com.bin.thread.HttpThread.run(HttpThread.java:66):调用接口失败！异常信息：net.sf.json.JSONException: Unterminated string at character 105 of {"url":"http://10.0.2.12:8999/ngqualitype/testMem","modelIds=201807131616163899049,201807261444350329725}
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-4
-接口：http://localhost:8080/httpservice/index
-耗时：1023ms
-结果：Congratulations
-================线程【Thread-4】信息结束================
-[ INFO]_2017-11-27 11:57:06 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-2】信息开始================
-总耗时: 1297ms
-平均耗时： 129ms
-最大耗时：1023ms
-请求数量： 10
-超时数量： 0
-----------------最大耗时接口信息----------------
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：576ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-2
-接口：http://localhost:8080/httpservice/index
-耗时：1023ms
-结果：Congratulations
-================线程【Thread-2】信息结束================
-[ INFO]_2017-11-27 11:57:06 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-3】信息开始================
-总耗时: 1314ms
-平均耗时： 131ms
-最大耗时：1023ms
-请求数量： 10
-超时数量： 0
-----------------最大耗时接口信息----------------
-线程：Thread-3
-接口：http://localhost:8080/httpservice/index
-耗时：1023ms
-结果：Congratulations
-================线程【Thread-3】信息结束================
-[ INFO]_2017-11-27 11:58:16 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-2】信息开始================
-总耗时: 1055ms
-平均耗时： 105ms
-最大耗时：879ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-2
-接口：http://localhost:8080/httpservice/index
-耗时：879ms
-结果：Congratulations
-================线程【Thread-2】信息结束================
-
-
-[ INFO]_2017-11-27 11:58:16 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-0】信息开始================
-总耗时: 1228ms
-平均耗时： 122ms
-最大耗时：878ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-0
-接口：http://localhost:8080/httpservice/index
-耗时：878ms
-结果：Congratulations
-================线程【Thread-0】信息结束================
-
-
-[ INFO]_2017-11-27 11:58:16 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-3】信息开始================
-总耗时: 1274ms
-平均耗时： 127ms
-最大耗时：878ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-3
-接口：http://localhost:8080/httpservice/index
-耗时：878ms
-结果：Congratulations
-================线程【Thread-3】信息结束================
-
-
-[ INFO]_2017-11-27 11:58:16 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-4】信息开始================
-总耗时: 1307ms
-平均耗时： 130ms
-最大耗时：878ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-4
-接口：http://localhost:8080/httpservice/index
-耗时：878ms
-结果：Congratulations
-================线程【Thread-4】信息结束================
-
-
-[ INFO]_2017-11-27 11:58:16 - com.bin.thread.HttpThread.run(HttpThread.java:58):
-================线程【Thread-1】信息开始================
-总耗时: 1314ms
-平均耗时： 131ms
-最大耗时：878ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：579ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-1
-接口：http://localhost:8080/httpservice/index
-耗时：878ms
-结果：Congratulations
-================线程【Thread-1】信息结束================
-
-
-[ INFO]_2017-11-27 12:00:00 - com.bin.thread.HttpThread.run(HttpThread.java:56):
-================线程【Thread-0】信息开始================
-总耗时: 1047ms
-平均耗时： 104ms
-最大耗时：809ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：576ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：576ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-0
-接口：http://localhost:8080/httpservice/index
-耗时：809ms
-结果：Congratulations
-================线程【Thread-0】信息结束================
-
-
-[ INFO]_2017-11-27 12:00:00 - com.bin.thread.HttpThread.run(HttpThread.java:56):
-================线程【Thread-3】信息开始================
-总耗时: 1079ms
-平均耗时： 107ms
-最大耗时：813ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：580ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：579ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：576ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：580ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-3
-接口：http://localhost:8080/httpservice/index
-耗时：813ms
-结果：Congratulations
-================线程【Thread-3】信息结束================
-
-
-[ INFO]_2017-11-27 12:00:00 - com.bin.thread.HttpThread.run(HttpThread.java:56):
-================线程【Thread-4】信息开始================
-总耗时: 1104ms
-平均耗时： 110ms
-最大耗时：812ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-4
-接口：http://localhost:8080/httpservice/index
-耗时：812ms
-结果：Congratulations
-================线程【Thread-4】信息结束================
-
-
-[ INFO]_2017-11-27 12:00:00 - com.bin.thread.HttpThread.run(HttpThread.java:56):
-================线程【Thread-2】信息开始================
-总耗时: 1120ms
-平均耗时： 112ms
-最大耗时：812ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-2
-接口：http://localhost:8080/httpservice/index
-耗时：812ms
-结果：Congratulations
-================线程【Thread-2】信息结束================
-
-
-[ INFO]_2017-11-27 12:00:00 - com.bin.thread.HttpThread.run(HttpThread.java:56):
-================线程【Thread-1】信息开始================
-总耗时: 1155ms
-平均耗时： 115ms
-最大耗时：813ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-1
-接口：http://localhost:8080/httpservice/index
-耗时：813ms
-结果：Congratulations
-================线程【Thread-1】信息结束================
-
-
-[ INFO]_2017-11-27 12:05:25 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-0】信息开始================
-总耗时: 1100ms
-平均耗时： 110ms
-最大耗时：890ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：597ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：597ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-0
-接口：http://localhost:8080/httpservice/index
-耗时：890ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-0】信息结束================
-
-
-[ INFO]_2017-11-27 12:05:25 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-2】信息开始================
-总耗时: 1209ms
-平均耗时： 120ms
-最大耗时：890ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-2
-接口：http://localhost:8080/httpservice/index
-耗时：890ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-2】信息结束================
-
-
-[ INFO]_2017-11-27 12:05:25 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-4】信息开始================
-总耗时: 1244ms
-平均耗时： 124ms
-最大耗时：891ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-4
-接口：http://localhost:8080/httpservice/index
-耗时：891ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-4】信息结束================
-
-
-[ INFO]_2017-11-27 12:05:25 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-1】信息开始================
-总耗时: 1249ms
-平均耗时： 124ms
-最大耗时：890ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：54ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：54ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-1
-接口：http://localhost:8080/httpservice/index
-耗时：890ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-1】信息结束================
-
-
-[ INFO]_2017-11-27 12:05:25 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-3】信息开始================
-总耗时: 1252ms
-平均耗时： 125ms
-最大耗时：892ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：55ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：55ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：55ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：55ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：72ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：72ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-3
-接口：http://localhost:8080/httpservice/index
-耗时：892ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-3】信息结束================
-
-
-[ INFO]_2017-11-27 12:26:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-0】信息开始================
-总耗时: 1347ms
-平均耗时： 134ms
-最大耗时：1074ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-0
-接口：http://localhost:8080/httpservice/index
-耗时：1074ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-0】信息结束================
-
-
-[ INFO]_2017-11-27 12:26:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-4】信息开始================
-总耗时: 1381ms
-平均耗时： 138ms
-最大耗时：1074ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-4
-接口：http://localhost:8080/httpservice/index
-耗时：1074ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-4】信息结束================
-
-
-[ INFO]_2017-11-27 12:26:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-3】信息开始================
-总耗时: 1393ms
-平均耗时： 139ms
-最大耗时：1074ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-3
-接口：http://localhost:8080/httpservice/index
-耗时：1074ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-3】信息结束================
-
-
-[ INFO]_2017-11-27 12:26:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-2】信息开始================
-总耗时: 1406ms
-平均耗时： 140ms
-最大耗时：1075ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-2
-接口：http://localhost:8080/httpservice/index
-耗时：1075ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-2】信息结束================
-
-
-[ INFO]_2017-11-27 12:26:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-1】信息开始================
-总耗时: 1439ms
-平均耗时： 143ms
-最大耗时：1074ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：65ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：65ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-1
-接口：http://localhost:8080/httpservice/index
-耗时：1074ms
-请求报文：null
-返回报文：Congratulations
-================线程【Thread-1】信息结束================
-
-
-[ INFO]_2017-11-27 14:06:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-0】信息开始================
-总耗时: 1189ms
-平均耗时： 118ms
-最大耗时：832ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：51ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：51ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 线程：Thread-0
-接口：http://www.baidu.com
-耗时：832ms
-请求报文：null
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：53ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：53ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：54ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：54ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：56ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：56ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：52ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：52ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：53ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：53ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：56ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：56ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：49ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：49ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：52ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：52ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：54ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：54ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：60ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：60ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：78ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：78ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：85ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：85ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：78ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：78ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：74ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：74ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：76ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：76ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：51ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：51ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：53ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：53ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：55ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：55ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：48ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：48ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：56ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：56ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：59ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：59ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：54ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：54ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：53ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：53ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：48ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：48ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：49ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：50ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：50ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：49ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：53ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：53ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：52ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：52ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-4
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：48ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：48ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-1
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：47ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：47ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-2
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：48ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：48ms
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-3
+接口：http://10.0.2.12:8999/ngqualitype/testMem
+耗时：49ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:37:54 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：49ms
+[ INFO]_2018-08-06 14:42:24 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：17843ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:42:24 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：17843ms
+[ INFO]_2018-08-06 14:43:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：5994ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:43:05 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：5994ms
+[ INFO]_2018-08-06 14:48:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：190942ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:48:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：190942ms
+[ INFO]_2018-08-06 14:50:37 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：24754ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:50:37 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：24754ms
+[ INFO]_2018-08-06 14:51:50 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：4678ms
+请求报文：{"modelIds":"201807131616163899049"}
+返回报文：finish
+[ INFO]_2018-08-06 14:51:50 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：4678ms
+[ INFO]_2018-08-06 14:53:06 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：17696ms
+请求报文：{"modelIds":"201807131616163899049"}
+返回报文：finish
+[ INFO]_2018-08-06 14:53:06 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：17696ms
+[ INFO]_2018-08-06 14:53:36 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：692ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:53:36 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：692ms
+[ INFO]_2018-08-06 14:53:56 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：5539ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:53:56 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：5539ms
+[ INFO]_2018-08-06 14:56:18 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：5044ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:56:18 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：5044ms
+[ INFO]_2018-08-06 14:57:48 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：5967ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:57:48 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：5967ms
+[ INFO]_2018-08-06 14:58:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：3359ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:58:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：3359ms
+[ INFO]_2018-08-06 14:59:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/testMem
+耗时：4004ms
+请求报文：{"modelIds":"201807131616163899049,201807261444350329725"}
+返回报文：finish
+[ INFO]_2018-08-06 14:59:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：finish，耗时：4004ms
+[ INFO]_2018-08-06 15:01:11 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ParserEngineServer/ParserEngineServer/parserEngine/modelPreview
+耗时：785ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
 返回报文：null
-================线程【Thread-0】信息结束================
-
-
-[ INFO]_2017-11-27 14:06:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-1】信息开始================
-总耗时: 1191ms
-平均耗时： 119ms
-最大耗时：849ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-1
-接口：http://www.baidu.com
-耗时：849ms
-请求报文：null
+[ INFO]_2018-08-06 15:01:11 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：null，耗时：785ms
+[ INFO]_2018-08-06 15:01:34 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ParserEngineServer/ParserEngineServer/parserEngine/modelPreview
+耗时：686ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
 返回报文：null
-================线程【Thread-1】信息结束================
+[ INFO]_2018-08-06 15:01:34 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：null，耗时：686ms
+[ INFO]_2018-08-06 15:03:26 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：Thread-0
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：48290ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:03:26 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：48290ms
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11590ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11590ms
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11755ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11755ms
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11827ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11827ms
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-8
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11835ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11835ms
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11876ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:21 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11876ms
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-7
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11964ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11964ms
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-10
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11971ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11971ms
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-9
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：11995ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：11995ms
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-6
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：12053ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：12053ms
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：12110ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:22 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：12110ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5866ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5866ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-7
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5537ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5537ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5746ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5746ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-9
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5543ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5543ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5663ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5663ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5813ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5813ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5659ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5659ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-10
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5816ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5816ms
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-6
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5786ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:27 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5786ms
+[ INFO]_2018-08-06 15:12:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-8
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6169ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6169ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-10
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5275ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5275ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5607ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5607ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-8
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5199ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5199ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-9
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5666ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5666ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-7
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5777ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5777ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5852ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5852ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5598ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5598ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5881ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5881ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-6
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5545ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5545ms
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5775ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:33 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5775ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5621ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5621ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-7
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5721ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5721ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-6
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5639ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5639ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-10
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5961ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5961ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5724ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5724ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5926ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5926ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5780ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5780ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-9
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6031ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6031ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-8
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6045ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6045ms
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6090ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:39 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6090ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5905ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5905ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-8
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5753ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5753ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5860ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5860ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-6
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6053ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6053ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6087ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6087ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-10
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6058ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6058ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-7
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6084ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6084ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-9
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5852ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5852ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：6052ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：6052ms
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：5602ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:12:45 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：5602ms
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3526ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3526ms
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3557ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3557ms
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3560ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3560ms
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3562ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3562ms
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3599ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:13:28 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3599ms
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3949ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3949ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3949ms
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3949ms
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3994ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：3994ms
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4055ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：4055ms
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4054ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:49:00 - com.bin.thread.HttpThread.run(HttpThread.java:46):返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}，耗时：4054ms
+[ INFO]_2018-08-06 15:57:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4060ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4101ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4108ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4155ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:00 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4197ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:29 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4114ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:29 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4114ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:29 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4126ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:29 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4148ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:57:29 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4230ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4301ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4305ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4344ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4374ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:05 - com.bin.thread.HttpThread.run(HttpThread.java:44):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4411ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4314ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 
-[ INFO]_2017-11-27 14:06:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-2】信息开始================
-总耗时: 1200ms
-平均耗时： 120ms
-最大耗时：831ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-2
-接口：http://www.baidu.com
-耗时：831ms
-请求报文：null
-返回报文：null
-================线程【Thread-2】信息结束================
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4376ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4424ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 
-[ INFO]_2017-11-27 14:06:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-3】信息开始================
-总耗时: 1203ms
-平均耗时： 120ms
-最大耗时：831ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-3
-接口：http://www.baidu.com
-耗时：831ms
-请求报文：null
-返回报文：null
-================线程【Thread-3】信息结束================
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4433ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:58:39 - com.bin.thread.HttpThread.run(HttpThread.java:44):
 
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4468ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+[ INFO]_2018-08-06 15:59:41 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4115ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
 
-[ INFO]_2017-11-27 14:06:41 - com.bin.thread.HttpThread.run(HttpThread.java:57):
-================线程【Thread-4】信息开始================
-总耗时: 1209ms
-平均耗时： 120ms
-最大耗时：832ms
-请求数量： 10
-超时数量： 0
-----最大耗时信息----
-线程：Thread-4
-接口：http://www.baidu.com
-耗时：832ms
-请求报文：null
-返回报文：null
-================线程【Thread-4】信息结束================
+[ INFO]_2018-08-06 15:59:41 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4119ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
 
+[ INFO]_2018-08-06 15:59:41 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4221ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 15:59:41 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4265ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 15:59:41 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4277ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:00:52 - com.bin.main.Tester.main(Tester.java:15):=============== Tester running ===============
+[ INFO]_2018-08-06 16:00:57 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3920ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:00:57 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3920ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:00:57 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3969ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:00:57 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3983ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:00:57 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3984ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:33 - com.bin.main.Tester.main(Tester.java:16):=============== Tester running Mon Aug 06 16:01:33 CST 2018===============
+[ INFO]_2018-08-06 16:01:37 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3916ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:37 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3917ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:37 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3971ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:37 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3971ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:37 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3976ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:48 - com.bin.main.Tester.main(Tester.java:16):=============== Tester running 1533542508855===============
+[ INFO]_2018-08-06 16:01:52 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3954ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:52 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3956ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:53 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3978ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:53 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3981ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:01:53 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3982ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:02:18 - com.bin.main.Tester.main(Tester.java:16):=============== Tester running Mon Aug 06 16:02:18 CST 2018 ===============
+[ INFO]_2018-08-06 16:02:22 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4030ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:02:22 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4029ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:02:22 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4035ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:02:22 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4034ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:02:22 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4038ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:03:17 - com.bin.main.Tester.main(Tester.java:16):============================== Tester running Mon Aug 06 16:03:17 CST 2018 ==============================
+[ INFO]_2018-08-06 16:03:21 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-1
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3978ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:03:21 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-2
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3995ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:03:21 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-4
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：3996ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:03:21 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-3
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4014ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
+
+[ INFO]_2018-08-06 16:03:21 - com.bin.thread.HttpThread.run(HttpThread.java:45):
+线程：pool-1-thread-5
+接口：http://localhost:8080/ngqualitype/ParserEngineServer/parserEngine/modelPreview
+耗时：4045ms
+请求报文：{"params":{"modelId":"cl001,cl002","fromFile":"/Users/jianglubin/Documents/output/xml/in","toFile":"","uuid":"2222200000","searchType":"select"},"searchType":null,"beans":null,"object":null}
+返回报文：{"beans":[],"rtnMsg":"模型预览失败","bean":{"uuid":"2222200000"},"rtnCode":"-9999","object":null}
 
