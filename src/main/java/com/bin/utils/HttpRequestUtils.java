@@ -10,6 +10,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -69,6 +70,7 @@ public class HttpRequestUtils {
 				entity.setContentType("application/json");
 				method.setEntity(entity);
 			}
+			HttpConnectionParams.setConnectionTimeout(httpClient.getParams(), 5000);
 			HttpResponse result = httpClient.execute(method);
 			url = URLDecoder.decode(url, "UTF-8");
 			/** 请求发送成功，并得到响应 **/
